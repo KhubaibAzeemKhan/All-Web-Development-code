@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Our Head code Starts here -->
+<head>
+    <!-- Meta tags are tags that helps in SEO -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web Developnment">
+    <meta name="description" content="This is description">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>Everything here about HTML</title>
+    <!-- This is how you include external css and javascript -->
+    <link rel="stylesheet" href="Khubaib.css">
+    <script src="Khubaib.js"></script>
+</head>
+<!-- Our Body code Starts here -->
+<body>
+    <h1>Khubaib</h1>
+    <h2>Khubaib</h2>
+    <h3>Khubaib</h3>
+    <!-- Write Lorem(no. of words you need) to get words -->
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam inventore provident ratione impedit, cumque illo! Repudiandae quia veritatis facere autem, deserunt quod deleniti a perspiciatis dolorem eum, laboriosam magni molestias animi dignissimos exercitationem enim commodi hic quos nesciunt officia voluptas?</p>
+    <!-- if you write p*(no. of paragraphs) you will get it!! -->
+    <!-- with strong code you can bold -->
+    <p>First <strong>paragraph</strong> so what</p>
+    <!-- with em code you can emphasize -->
+    <p>Second <em>paragraph</em> so now what</p>
+    <!-- We can use br tag to create a new line -->
+    <p>Third <br>This is new line</p>
+    <!-- You can use hr tag to insert line in your like done below -->
+    <hr>
+    <p>Fourth paragraph is here and <b>it is bold</b> and <i>it is italic</i></p>
+    <!-- ctrl + enter to jum into new line -->
+    
+    <!-- This is how you add links or etc -->
+    <a href="https://twitter.com">TWITTER</a><br>
+    <!-- target="_blank" is used to open website in a new tab and also hold alt to write at multiple places at one time -->
+    <a href="https://facebook.com"target="_blank">facebook</a><br>
+    <a href="https://google.com"target="_blank">google</a><br>
+    <a href="tut2.html"target="_blank">Tutorial 2</a><br>
+   <!----Image is not present hence alt text is shown--> 
+    <img src="Khubaib.jpg" alt="Error loading image">
+
+    <img src="demo image.jpg" alt="Italian Trulli"width="200" height="100">
+    <!-- This is how to add lists -->
+    <!-- You can choose type/attribute of lists -->
+    <ul type="square">
+        <li>This is my first item of unordered list</li> 
+        <li>This is my second item of unordered list</li>
+        <li>This is my third item of unordered list</li>
+        <!-- you can also add one list into another -->
+            <ul>
+                <li>Another one</li>
+            </ul>
+        </li>
+      
+    </ul>
+    <!-- You can choose type/attribute of lists -->
+    <ol type="I">
+        <li>This is my first item of ordered list</li>
+        <li>This is my second item of ordered list</li>
+        <li>This is my third item of ordered list</li>
+    </ol>
+    <!-- this is how to add table  -->
+    <h1>HTML TABLE</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Employee ID</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+    <tr>
+        <td>Khubaib</td>
+        <td>22449</td>
+        <td>Programmer</td>
+    </tr>
+    <tr>
+        <td>Ali</td>
+        <td>9999</td>
+        <td>Berozgar nikamma</td>
+    </tr>
+    <tr>
+        <td>Mubashir</td>
+        <td>1814</td>
+        <td>Also Nikamma</td>
+    </tr>
+        </tbody>
+    </table>
+    <!-- This is how to add Forms -->
+    <h2>Forms</h2>
+    <form action="backend.php">
+        <div>
+        Name: <input type="text" name="myName">
+    </div>
+    <br>
+    <div>
+       Role: <input type="text" name="myRole">
+    </div>
+    <br>
+    <div>
+       Email: <input type="email" name="myEmail">
+    </div>
+    <br>
+    <div>
+        Date:<input type="date" name="" id="">
+    </div>
+    <br>
+    <div>
+        Bonus: <input type="number" name="MyBonus" >
+    </div>
+    <br>
+    <label for="eligibility">Are You Eligible?</label>
+    <div>
+        <!-- if you want checkbox to be checked by default write check like below -->
+         <input type="checkbox" name="MyEligibility" id="eligibility" checked>
+    </div>
+    <br>
+    <div>
+        Gender: Male<input type="radio" name="MyGender" > Female<input type="radio" name="MyGender" >
+    </div>
+    <br>
+    <div>
+       Write about yourself: <br> <textarea name="MyText" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+       <label for="car">Car</label>
+       <select name="MyCar" id="car">
+        <option value="corolla">Corolla</option>
+        <option value="Lambo">Lamborghini</option>
+       </select>
+    </div>
+    <!-- With alt + arrow key you can move a line -->
+    <br>
+    <div>
+       <input type="submit" value="Submit Now">
+       <input type="Reset" value="Reset Now">
+    </div>
+
+    </form>
+    <!-- paragraph is Block element it takes all space where as span and a are inline takes only its own space -->
+    <p>This is a paragraph</p><p>This is a paragraph</p>
+    <span>This is a span</span> <span>This is a span</span>
+    <h3>Ids and Classes</h3>
+    <div id="mainbox" class="redBg blackBorder">
+        This is main box
+    </div>
+    <!-- Emmet -->
+    <!-- Name of code (.) for class (#) for id and emmet it to get example down below  -->
+    <span class="redBg"></span>
+    <span id="mainspan"></span>
+    <div class="redBg blackBorder anotherclass"></div>
+    <!-- Emmet takes div as default .blackborder etc -->
+    <!-- span.class1.class2.class3*3 <Tab> to get 3 similar elements-->
+        <span class="class1 class2 class3">First</span>
+        <span class="class1 class2 class3">Second</span>
+        <span class="class1 class2 class3">Third</span>
+        <h2>HTML Entities</h2>
+        <!-- With &nbsp; you can add multiple spaces -->
+        <div class="conatainer">
+            <p>This is a paragraph</p>
+            <p>This is another &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; paragraph</p>
+            <!-- You can write a code in a paragraph like this &lt;p&gt; &pound; -->
+            <p>paragraph is written like this &lt;p&gt;</p>
+            <p>Pound is written like this &pound;</p>
+            <p>Copyright is written like this &copy;</p>
+            <p>Empty space is written like this &#8203;</p>
+        </div>
+        <h3>HTML Semantic Tags</h3>
+        <details>
+            <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?</summary>
+            A keyboard. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga eligendi molestias quam quas velit cumque recusandae architecto quo illum. Eligendi ipsa dignissimos voluptatibus reprehenderit.
+          </details>
+
+          <!-- Video,Audio and Media Tags(Sigma Web Development Course) -->
+          <!-- Poster tag works as thumbnail of the video -->
+          <video src="Songvideo.mp4"height="224" controls loop muted poster="demo image.jpg"></video>
+          <audio src="911.mp3" controls loop autoplay muted></audio>
+          <!-- Media -->
+           <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    <!-- <img src="img.svg" alt="My Svg Image"> -->
+    <!-- Iframe -->
+    <iframe src="https://www.codewithharry.com/tutorial/html-iframes/" width="322" height="444"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tVzUXW6siu0?si=NuQZuYqrMHn7Pg-i&amp;start=739" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+          
+</body>
+</html>
