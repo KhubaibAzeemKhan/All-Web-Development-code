@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo selectors</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+    }
+
+    section {
+        height: 344px;
+            font-family: 'Bree Serif', serif;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    }
+    
+    header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+
+    /* section::before {
+
+        content: "This is a Content"
+    }
+    section::after {
+
+        content: "This is a Content"
+    } */
+
+    .navigation {
+        font-family: 'Bree Serif', serif;
+        font-size: 24px;
+        display: flex;
+    }
+
+    li {
+        list-style: none;
+        padding: 24px 34px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome To Coding World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptate aliquid velit laborum
+                obcaecati nostrum earum, amet reprehenderit quod at magnam, eaque architecto vel!</p>
+        </section>
+        <hr>
+</body>
+
+</html>

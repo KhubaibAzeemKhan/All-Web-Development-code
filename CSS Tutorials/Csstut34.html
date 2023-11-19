@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+</head>
+<style>
+    /* MDN reference of CSS Filters: https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
+/* img{
+    filter: blur(8px);
+} */
+.img1{
+    filter: brightness(125%) contrast(0.7);
+}
+/* Grayscale is used to do gray and white the image */
+.img2{
+filter: grayscale(25%);
+filter: sepia(25%);
+}
+.img3{
+    /* filter: invert(1); */
+    /* filter: opacity(1); */
+    filter: opacity(0.9);
+}
+
+</style>
+<body>
+    <div class="container">
+        <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT22vTMf3OcKg4nEDvwdNucmJX-Yezu0RLgGw&usqp=CAU" alt="">
+        <img class="img2" src="https://i.brecorder.com/primary/2021/08/6127701680099.png" alt="">
+        <img class="img3" src="Khubaib.jpg" alt="">
+    </div>
+    
+</body>
+</html>

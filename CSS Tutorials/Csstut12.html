@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: rgb(194, 255, 154);
+            height: 2444px;
+        }
+        /* CSS Position: Static(default),Relative,Absolute,Fixed,Sticky */
+        .box{
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+        #box3{
+            /* Relative: Relative to its normal position and will leave space to its normal position 
+            position: relative;*/
+            /* Absolute: Relative to position of its first parent*/
+            position: absolute;
+            
+            top: 422px;
+            left: 422px;
+        }
+        #box4{
+            /* Fixed: It is used to fix an element or anything where you want even if you scrool */
+            position: fixed;
+            bottom: 2px;
+            right: 4px;
+        }
+        #box2{
+            /* Sticky: It makes the element stick mostly used in menu etc */
+            position:sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

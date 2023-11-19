@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+</head>
+<style>
+    /* Element Selector */
+    p{
+        border: 2px solid red;
+    }
+    /* Id Selector */
+    #redElement{
+        color: red;
+    }
+    p{
+        color: blue;
+    }
+    /* Class Selector */
+    .redElement{
+        color: green;
+    }
+    .bgAqua{
+        background-color: aqua;
+    }
+    /* Grouping selector */
+    footer,span{
+        background-color: pink;
+    }
+</style>
+<body>
+    <h3>CSS Selector</h3>
+    <p>This is a demo paragraph yes it is hahaha</p>
+    <p>This is also a demo paragraph yes it is hahaha</p>
+    <!-- CSS do not interrupted with div tag -->
+    <div>
+<p id="redElement">This is another paragraph to demonstrate hahaha</p>
+    </div>
+    <div>
+<p id="Fourthpara" class="redElement bgAqua">This is another paragraph to demonstrate hahaha</p>
+    </div>
+    <footer>This is footer</footer>
+    <span>this is span</span>
+</body>
+</html>

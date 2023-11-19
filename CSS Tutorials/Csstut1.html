@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Tutorial</title>
+</head>
+<!-- This is linked css external file -->
+<!-- Between Internal and External CSS(Link) the one who is above in code will get priority -->
+<link rel="stylesheet" href="CSStut.css">
+<style>
+    /* This is Internal CSS that is written is style tag */
+    /* Important tags gives priority */
+    p {
+        color: blue; background-color: black !important;
+    }
+</style>
+<body>
+    <h2>CSS Tutorial</h2>
+    <!-- The CSS below is Inline CSS -->
+    <!-- <p style="color: aqua; background-color: blue;">My name is Khubaib Azeem Khan Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, reiciendis</p> -->
+    <p>My name is Khubaib Azeem Khan Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, reiciendis</p>
+</body>
+</html>

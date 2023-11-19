@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        border: 2px solid red;
+        margin: 24px 12px;
+        padding: 24px 12px;
+        background-color: burlywood;
+        /* box-shadow: offset-x offset-y color; */
+    /* box-shadow: offset-x offset-y blur-radius color; */
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+        /* box-shadow: 6px 8px green; */
+
+        /* To give the shadow on upper side */
+        /* box-shadow: -6px -8px green; */
+
+        /* To get the blury effect third one has been set */
+        /* box-shadow: 6px 8px 24px green; */
+
+        /* The fourth one is to set how much effect can spread */
+        /* box-shadow: 6px 8px 24px 34px green; */
+
+        /* 0.2 is Alpha that is set to set darkness  */
+         box-shadow: 6px 8px 24px 34px rgba(71, 172, 172, 0.2);
+         /* For Inner shadow use this tag */
+         box-shadow: inset 3px 5px green;
+
+         /* For Inner shadow use this tag */
+    box-shadow: 3px 5px green, 4px 6px red;
+    }
+    .card h2{
+    /* text-shadow: 3px 4px red; */
+    /* text-shadow: 3px 2px 2px white; */
+    text-shadow: -3px -2px 2px white;
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id eveniet. Debitis iure, quis repudiandae deleniti itaque, in quod eius, libero enim soluta iste ad nobis ea natus quos molestiae nam eos. Reprehenderit, repellat.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id eveniet. Debitis iure, quis repudiandae deleniti itaque, in quod eius, libero enim soluta iste ad nobis ea natus quos molestiae nam eos. Reprehenderit, repellat.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id eveniet. Debitis iure, quis repudiandae deleniti itaque, in quod eius, libero enim soluta iste ad nobis ea natus quos molestiae nam eos. Reprehenderit, repellat.</p>
+        </div>
+    </div>
+</body>
+</html>

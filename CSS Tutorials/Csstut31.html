@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Tempelate Areas</title>
+</head>
+<Style>
+    .container{
+        display: grid;
+gap: 1rem;
+grid-template-areas: 
+'navbar navbar navbar navbar'
+'section section section aside'
+'footer footer footer footer';
+    }
+    .item{
+        background-color: yellow;
+        border: 3px solid black;
+    }
+    #navbar{
+        grid-area: navbar;
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area: aside;
+    }
+    footer{
+        grid-area: footer;
+    }
+</Style>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam quisquam eaque officiis quaerat perferendis exercitationem, tempora neque! Ea, unde. Sapiente quod voluptas atque quo eveniet dignissimos repellendus quisquam dolor. Voluptates pariatur tenetur provident ab, ipsam voluptatem illo ipsa non? Natus rerum nihil tempore ipsa? Explicabo eligendi provident neque commodi, temporibus reiciendis at, in eos tenetur quia ratione qui asperiores totam cumque excepturi nulla porro, repellat molestiae sit itaque magnam sed praesentium odit! Nostrum dignissimos, distinctio voluptates consectetur autem quibusdam voluptate aut nesciunt obcaecati, delectus a vero, ratione optio illum adipisci ex consequuntur similique rerum asperiores assumenda minus placeat! Ipsam quis quaerat porro laboriosam itaque ad enim saepe voluptatem! Ea culpa iusto magnam doloribus sunt vitae, blanditiis nobis praesentium. Iste deleniti quia sapiente labore cum dolores asperiores veniam consequatur perferendis eum debitis quam consequuntur repudiandae, voluptate possimus, obcaecati accusantium impedit. Temporibus quibusdam molestias sed nesciunt, fugit non amet. Fugit ducimus sed facere expedita accusantium quaerat fuga animi nesciunt possimus unde qui veniam maxime assumenda ipsa eligendi illum consequatur voluptas, consectetur ullam. Alias dolores dolorum velit. Est sit officia magni at, in commodi hic eaque praesentium expedita cumque aliquid obcaecati, ratione quaerat cum nesciunt sunt omnis ab dicta doloribus quod molestias eligendi exercitationem voluptate! Ipsa vitae, odit ducimus, provident accusantium nobis incidunt error, autem qui vero recusandae harum repellat alias exercitationem saepe facilis dolores pariatur natus! Recusandae, itaque saepe animi debitis mollitia cupiditate laudantium officia sunt neque, pariatur ipsam nostrum quia minima?
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis quae quisquam facilis accusamus temporibus ullam eos adipisci repellendus autem fuga, vero, quasi ea ad aspernatur saepe officia nobis dicta consequuntur, sapiente vel sit quod? Veniam nulla deserunt officia exercitationem fuga excepturi dolores cum, fugiat vel minima, corrupti quo quae ut incidunt porro soluta quasi quod. Assumenda, saepe. Inventore et laboriosam quidem maxime quasi similique quibusdam recusandae deleniti quam facere mollitia cum magnam eius voluptatum placeat error ex non id, possimus, officiis excepturi. Temporibus soluta ducimus odit libero, repellat odio? Doloribus?
+        </div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe natus, eligendi nobis culpa sunt nam perspiciatis cumque reiciendis iste possimus quos eius deleniti omnis.</footer>
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div> -->
+    </div>
+</body>
+</html>
