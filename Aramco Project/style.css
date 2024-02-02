@@ -1,0 +1,531 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    display: flex;
+}
+header .left ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    top: 0rem;
+    left: 50px;
+}
+/* header .left ul li::before{
+    font-size: .625rem;
+    content: "•";
+    display: inline-block;
+    float: none;
+    position: relative;
+    line-height: 1;
+    color: #00a3e0;
+} */
+header .left ul li{
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+    top: -10px;
+}
+header .right ul li{
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+    top: -10px;
+
+}
+header .left ul li a{
+    text-decoration: none;
+    color: #00a3e0;
+    font-size: 14px;
+}
+header .left ul li a:hover{
+    text-decoration: underline;
+}
+header .left ul li a svg{
+    color: #00a3e0;
+}
+header .right ul li a:hover{
+    text-decoration: underline;
+}
+header .right ul li a svg{
+    color: #00a3e0;
+}
+header .right ul li a{
+    text-decoration: none;
+    color: #00a3e0;
+    font-size: 14px;
+
+}
+header .right ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: 0rem;
+    left: 30rem;
+}
+.line p{
+    padding: 0 109px;
+    position: relative;
+    top: -42px;
+    opacity: 0.2;
+}
+nav{
+    display: flex;
+    align-items: center;
+    max-width: 85vw;
+    margin: auto;
+}
+nav .search{
+    position: relative;
+    top: -35px;
+}
+nav .search button{
+    background: #007eac;
+    border: none;
+    cursor: pointer;
+}
+nav .mid{
+    position: relative;
+    top: -35px;
+}
+nav .mid ul{
+display: flex;
+}
+nav .mid ul li {
+    list-style: none;
+}
+nav .mid ul li a{
+    text-decoration: none;
+    padding: 0px 40px 3px 0px;
+    color: #00a3e0;
+    background-image: linear-gradient(currentColor,currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .3s;
+}
+nav .mid ul li a:hover{
+    background-size: 69% 2px;
+}
+
+nav .logo{
+    position: relative;
+    top: -55px;
+    left: 19rem;
+}
+.logo-img{
+    width: 7.65rem;
+    height: 1.575rem;
+}
+.logo-img img{
+    width: 9.65rem;
+    height: 2.575rem;
+}
+.first{
+    height: 88vh;
+}
+
+.first .h-p{
+    font-size: 1.4rem;
+    position: relative;
+    left: 108px;
+    top: 180px;
+    color: white;
+    width: 85vw;
+
+}
+.first::before{
+    content: "";
+    background: url(https://www.aramco.com/-/media/images/investors/q3-earnings-web.jpg?cx=0.48&cy=0.49&cw=1707&ch=960&hash=7774C37938C57AB539984E3E252B92CD25A37C9D) no-repeat center center/cover;
+    height: 92%;
+    top: 155px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.first .h-p h2{
+    width: 32vw;
+    font-size: 2.9rem;
+}
+.first .h-p h4{
+    width: 32vw;
+}
+.first .h-p p{
+    position: relative;
+    top: -35px;
+    font-weight: 700;
+    width: 55vw;
+}
+ .fst {
+    background-color: #007eac;
+    color: white;
+    border: none;
+    padding: 16px 14px;
+    cursor: pointer;
+}
+ .fst:hover {
+    /* opacity: 0.8; */
+    background-color: #00a3e0;
+    text-decoration: underline;
+    border: 2px solid white;
+    padding: 14px 12px;
+}
+ .scnd {
+    background-color: #ffffff00;
+    color: white;
+    border: 2px solid white;
+    padding: 14px 25px;
+    position: relative;
+    left: 11px;
+    cursor: pointer;
+}
+.scnd:hover{
+    text-decoration: underline;
+}
+.swipe-line{
+    position: relative;
+    top: 100px;
+}
+.swipe-line span{
+    font-weight: 500;
+    padding: 25px;
+    cursor: pointer;
+}
+.swipe-line span:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.first .h-p::after{
+    content: "\2193";
+    font-size: 2rem;
+    z-index: 10;
+    background-color: white;
+    color: silver;
+    max-width: 4vw;
+    height: 4.5rem;
+    text-align: center;
+    display: block;
+    line-height: 2;
+    position: relative;
+    bottom: -54px;
+    left: 50%;
+}
+.h-primary{
+    color: #676a6e;
+    font-size: 2.2rem;
+    padding-left: 144px;
+}
+.car-box{
+    display: flex;
+    justify-content: center;
+}
+.car-img img{
+    height: 85%;
+    position: relative;
+    left: 3vw;
+}
+.side-box{
+    background-color: #007eac;
+    color: white;
+    height: 49.4vh;
+    position: relative;
+    right: 4.5rem;
+    top: 0px;
+}
+.side-box h2{
+    color: white;
+    font-size: 1.5rem;
+}
+.content-side-box{
+    width: 28vw;
+    margin: auto;
+    padding: 60px 65px;
+}
+.content-side-box button{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 2px solid white;
+    padding: 13px 35px;
+    margin-top: 15px;
+}
+.content-side-box button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+/* Third Section */
+.third-sec-h{
+    padding-left: 185px;
+}
+.third-sec-pics{
+    position: relative;
+    top: 25px;
+    display: flex;
+    padding-left: 100px;
+    font-size: 15px;
+}
+.third-sec-pics img{
+    margin: 12px;
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px ;
+    border-bottom-left-radius: 15px ;
+}
+.pic-1{
+    position: relative;
+    top: 16.59rem;
+}
+.pic-1 img{
+    width: 350px;
+}
+.pic-2{
+    position: relative;
+    top: 4rem;
+}
+.pic-2 img{
+    width: 265px;
+}
+.pic-3{
+    position: relative;
+    top: 11.29rem;
+}
+.pic-3 img{
+    width: 280px;
+}
+.pic-4{
+    position: relative;
+    top: 17.2rem;
+}
+.pic-4 img{
+    width: 330px;
+}
+.pic-5{
+    position: relative;
+    top: 8.99rem;
+    overflow: hidden;
+}
+.third-sec-pics p{
+    width: 14em;
+    position: relative;
+    left: 15px;
+}
+
+.r-arrow{
+    color: rgba(0, 127, 173, 1);
+    font-size: 1.5rem;
+    position: relative;
+    top: -10px;
+    left: 15px;
+    cursor: pointer;
+}
+.third-sec-pics button{
+    color: rgba(0, 127, 173, 1);
+    position: relative;
+    top: -11px;
+    left: 15px;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: white;
+}
+.separation{
+    height: 3px;
+    background-color: #00a3e0;
+    position: relative;
+    top: 8rem;
+    z-index: 20;
+    width: 85vw;
+    margin: auto;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+/* Fourth Section */
+.fourth{
+    position: relative;
+    top: 18rem;
+    left: -3.5rem;
+}
+.fourth-sec-header{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    
+}
+.fourth-sec-h h2{
+    font-size: 2.5rem;
+}
+.visit-arrow{
+    position: relative;
+    /* top: 6rem; */
+    font-size: 2rem;
+    color: rgba(0, 127, 173, 1);
+    border: 2px solid rgba(0, 127, 173, 1);
+    border-radius: 60px;
+    padding: 6px 15px 14px 15px;
+    cursor: pointer;
+}
+.visit-btn{
+    position: relative;
+    left: 90px;
+    top: 6.25rem;
+}
+.visit-btn button{
+    border: none;
+    background-color: white;
+    color: rgba(0, 127, 173, 1);
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+.fourth-sec-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 42px;
+    top: 4rem;
+}
+
+/* .fourth-sec-main-left{
+    width: 70vw;
+} */
+.fourth-sec-main-left img{
+    width: 22.5rem;
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px ;
+    border-bottom-left-radius: 15px ;
+}
+.read-more-btn{
+    color: rgba(0, 127, 173, 1);
+    cursor: pointer;
+    padding-bottom: 45px;
+}
+.read-more-btn button{
+    color: rgba(0, 127, 173, 1);
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.fourth-sec-main-right{
+    padding-left: 24px;
+}
+.fourth-sec-main-right img{
+    height: 46.9rem;
+    width: 50vw;
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px ;
+    border-bottom-left-radius: 15px ;
+}
+
+/* .about-us::before{
+    content: "";
+    z-index: -1;
+    background: url(https://www.aramco.com/-/jssmedia/images/who-we-are/about-us.jpg?cx=0.49&cy=0.46&cw=1760&ch=300) no-repeat center center/cover;
+    height: 80vh;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    
+} */
+.about-us-img{
+    position: relative;
+    top: 30rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.about-us-img img{
+    filter:brightness(0.6);
+    overflow: hidden;
+}
+.about-us-content{
+    position: relative;
+    left: 45rem;
+    top: 13.5rem;
+    color: white;
+    font-size: 2.6rem;
+    font-weight: lighter;
+    width: 50vw;
+    cursor: pointer;
+}
+.about-us-content button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+    color: white;
+    cursor: pointer;
+}
+.about-us-content span:hover{
+    color: #007eac;
+}
+.about-us-content button:hover{
+    color: #007eac;
+}
+.about-us-content span{
+    position: relative;
+    top: -40px;
+    font-size: 25px;
+}
+.about-us-content h4{
+    font-weight: 600;
+    width: 50vw;
+}
+.columns{
+    display: flex;
+    gap: 15rem;
+    position: relative;
+    top: 20rem;
+    left: 13rem;
+    width: 77vw;
+}
+.column-items a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 0.875rem;
+}
+footer p{
+    font-size: 1rem;
+}
+.column-items{
+    position: relative;
+    top: 2rem;
+}
+.end{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 25rem;
+    left: 14rem;
+    width: 77vw;
+}
+.end p{
+    margin-right: 25rem;
+    margin-bottom: 5rem;
+}
+.end-logo-img img{
+    width: 9.65rem;
+    height: 2.575rem;
+}
+.end-logo{
+    position: relative;
+    top: -2rem;
+}
+.arrow{
+    padding: 1rem 1.4rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: large;
+    position: relative;
+    top: -1rem;
+}
+.arrow:hover{
+    color: #007eac;
+    border: 2px solid #007eac;
+}
